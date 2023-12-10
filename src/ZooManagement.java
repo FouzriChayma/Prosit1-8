@@ -1,21 +1,16 @@
 import java.util.Scanner;
 
 public class ZooManagement {
-    int nbrCages = 20;
-    String zooName = "myZoo";
+    //int nbrCages = 20;
+    //String zooName = "myZoo";
 
     public static void main(String[] args) {
-        //Instruction 1
+       /* Instruction 1
         ZooManagement zm = new ZooManagement();
         System.out.println(zm.zooName + " comporte " + zm.nbrCages);
 
         //Instruction 2
         /*
-         1/ Modifiez la variable d'environnement PATH et ajoutez le chemin du répertoire Java
-         2/ Lancez l'invite de commande(cmd) et naviguer vers le chemin du fichier ZooManagement.java
-         3/ Lancez l'instruction "javac ZooManagement.java"
-         4/ Lancez l'instruction "java ZooManagement"
-         */
 
         System.out.println("-------------------------------------------------------------");
         //Instruction 3
@@ -60,5 +55,73 @@ public class ZooManagement {
 
         System.out.println(myZoo.removeAnimal(dog));
         myZoo.displayAnimals();
+
+        //   System.out.println(myZoo.removeAnimal(dog));
+
+
+        System.out.println(myZoo);
+
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(dog);
+        myZoo.addAnimal(dog2);
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(lion));
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(dog2));
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(dog));
+        myZoo.displayAnimals();
+
+//        System.out.println(Zoo.comparerZoo(myZoo, notMyZoo));
+//        System.out.println(myZoo.isZooFull());
     }
 }
+*/
+////////////////////////////////////////////////////PROSIT 3/////////////////////////////////////////////////
+/////////////////////////////////////////////////////PROSIT 3/////////////////////////////////////////////////
+/////////////////////////////////////////////////////PROSIT 3/////////////////////////////////////////////////
+        Animal lion = new Animal();
+        lion.name = "Simba";
+        lion.age = 8;
+        lion.family = "Cats";
+        lion.isMammal = true;
+
+        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
+        Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
+
+
+        Animal dog = new Animal("Canine", "Snoopy", 2, true);
+
+
+        System.out.println(myZoo.addAnimal(lion));
+        System.out.println(myZoo.addAnimal(dog));
+
+        myZoo.displayAnimals();
+
+        System.out.println(myZoo.searchAnimal(dog));
+        Animal dog2 = new Animal("Canine", "lll", 2, true);
+        System.out.println(myZoo.searchAnimal(dog2));
+
+        //   System.out.println(myZoo.removeAnimal(dog));
+        myZoo.displayAnimals();
+
+
+        System.out.println(myZoo);
+
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(dog);
+        myZoo.addAnimal(dog2);
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(lion));
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(dog2));
+        myZoo.displayAnimals();
+        System.out.println("a" + myZoo.removeAnimal(dog));
+        myZoo.displayAnimals();
+
+//        System.out.println(Zoo.comparerZoo(myZoo, notMyZoo));
+//        System.out.println(myZoo.isZooFull());
+
+    }
+
+    }
